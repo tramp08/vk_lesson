@@ -20,7 +20,7 @@ def main():
             vk = vk_session.get_api()
             try:
                 vk.messages.send(user_id=event.obj.message['from_id'],
-                             message="Спасибо, что написали нам. Мы обязательно ответим",
+                             message=f"Спасибо, что написали нам <{event.obj.message['text']}>. Мы обязательно ответим",
                              random_id=random.randint(2 ** 33, 2 ** 64))
             except Exception as e:
                 print(f'ошибка: {e.__str__()}')
