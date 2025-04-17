@@ -1,7 +1,7 @@
 import vk_api
 from vk_api.bot_longpoll import VkBotLongPoll, VkBotEventType
 import random
-import numpy as np
+# import numpy as np
 from config import TOKEN, id_сообщества
 
 def main():
